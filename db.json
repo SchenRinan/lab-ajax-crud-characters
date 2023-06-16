@@ -1,28 +1,11 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
   "characters": [
     {
       "id": 1,
       "name": "Han Solo",
-      "occupation": "Pilot",
-      "weapon": "Pistol",
-      "cartoon": false
+      "occupation": "Smuggler",
+      "weapon": "Blaster Pistol",
+      "cartoon": true
     },
     {
       "id": 2,
@@ -37,6 +20,20 @@
       "occupation": "Lives under the sea",
       "weapon": "Crabby Patty",
       "cartoon": true
+    },
+    {
+      "name": "Everything",
+      "occupation": "Works",
+      "weapon": "Surprisingly",
+      "cartoon": false,
+      "id": 4
+    },
+    {
+      "name": "Reseeded",
+      "occupation": "for quick",
+      "weapon": "clean",
+      "cartoon": false,
+      "id": 5
     }
   ]
 }

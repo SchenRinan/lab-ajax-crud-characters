@@ -28,6 +28,7 @@ class APIHandler {
 
   async createOneRegister (item) {
     try {
+      // item.id = await this.api.get(`/characters`).length + 1
       const response = await this.api.post(`/characters`, item);
       // const todoItems = response.data;
       // // console.log(todoItems[0].name);
@@ -48,7 +49,14 @@ class APIHandler {
     }
   }
 
-  deleteOneRegister () {
-
+  async deleteOneRegister (item) {
+    try {
+      await this.api.delete(`/characters/${item}`);
+      // const todoItems = response.data;
+      // // console.log(todoItems[0].name);
+      // return todoItems;
+    } catch (errors) {
+      console.error(errors);
+    }
   }
 }
